@@ -8,6 +8,7 @@ const Cart = ({cart, handleRemoveFromCart}) => {
             <div className="cart-container">
                 {cart.map(bottle=> <div  key={bottle.id}>
                     <img src={bottle.img}></img>
+                    
                     <button onClick={() => handleRemoveFromCart(bottle.id)}>Remove</button>
                 </div>)}
             </div>
